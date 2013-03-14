@@ -27,10 +27,10 @@ gem 'schema_associations'
 gem 'catarse_paypal_express', git: 'git://github.com/catarse/catarse_paypal_express.git',  ref: 'bce4d8c'
 
 # Payment engine using Moip
-gem 'catarse_moip',           git: 'git://github.com/catarse/catarse_moip.git',            ref: 'd71157a0365611048a36180846a3c0c84768b916'
+gem 'catarse_moip',           git: 'git://github.com/catarse/catarse_moip.git', ref: '9ba2b2b'
 
 # TODO: Check the Catarse_Moip dependency
-gem 'moip', '2.1.2'
+gem 'moip', git: 'git://github.com/moiplabs/moip-ruby.git'
 
 # Decorators
 gem 'draper'
@@ -55,8 +55,8 @@ gem 'cancan', git: 'git://github.com/ryanb/cancan.git', branch: '2.0', ref: 'f1c
 # Error reporting
 gem "airbrake"
 
-# Email marketing using mailchimp
-gem 'catarse_mailchimp', git: 'git://github.com/devton/catarse_mailchimp'
+# Email marketing
+gem 'catarse_mailchimp', git: 'git://github.com/catarse/catarse_mailchimp'
 
 # HTML manipulation and formatting
 gem 'formtastic',   '~> 2.1.1'
@@ -76,7 +76,7 @@ gem 'has_scope'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'has_vimeo_video',            '~> 0.0.5'
 gem 'enumerate_it'
-gem 'httparty', '~> 0.8.1'
+gem 'httparty', '~> 0.6.1' # this version is required by moip gem, otherwise payment confirmation will break
 
 # Translations
 gem 'http_accept_language'
