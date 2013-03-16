@@ -38,8 +38,10 @@ gem 'draper'
 # Frontend stuff
 gem 'slim'
 gem 'slim-rails'
+gem 'haml-rails'
 gem 'jquery-rails'
 gem 'initjs'
+gem 'bootstrap-sass', '>= 2.2.2.0'
 
 # Authentication and Authorization
 gem 'omniauth'

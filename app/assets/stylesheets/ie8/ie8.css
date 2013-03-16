@@ -1,0 +1,11 @@
+.add-item h4 { font-size: 11px; }
+
+.section-title { padding-top: 2px; padding-bottom: 3px; }
+
+#page > .nav-tabs li.active a { background: #ddd; }
+
+.nav-tabs > li > a { padding-top: 3px !important; padding-bottom: 1px !important; }
+
+.btn-large { font-size: 13px; }
+
+.btn-small { height: 21px; line-height: 22px; }

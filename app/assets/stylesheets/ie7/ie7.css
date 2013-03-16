@@ -1,0 +1,18 @@
+.add-item h4 { font-size: 11px; }
+
+.section-title { padding-top: 2px; padding-bottom: 3px; }
+
+#campaign #page { background: #fafafa; }
+
+#slider .caption h1 { margin-top: 10px; }
+
+.banners .stars { margin-top: 3px; }
+article.item header .stars, .item-mini .stars { margin-top: 5px; }
+
+#page .nav-tabs > li > a { padding-top: 1px !important; padding-bottom: 1px !important; }
+
+.btn-large { font-size: 13px; }
+
+.btn-small { height: 21px; line-height: 22px; }
+
+#page #form-steps h1 { padding-top: 10px; }

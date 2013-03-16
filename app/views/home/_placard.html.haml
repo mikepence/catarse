@@ -1,0 +1,46 @@
+%article.item.span3
+  %header
+    %div
+      %strong
+        4
+      sponsors
+    = project.display_image
+    .rating
+      %strong
+        Validation Rating:
+      .stars
+      %span
+        (14 ratings)
+    %span
+      = project.category.name_en
+  .body
+    %h3.title
+      = link_to project.name, project_path(project)
+    %p.meta
+      By
+      = link_to project.user.name, user_path(project.user)
+    %p
+      = project.headline
+  %aside
+    .progress.progress-info
+      .bar{:style => "width: #{project.display_progress}"}
+    %ul
+      %li
+        %strong
+          = project.display_progress
+        funded
+      %li
+        %strong
+          = project.display_pledged
+        raised
+      %li
+        %strong
+          = project.remaining_days
+        days left
+  %footer
+    %strong
+      15
+    .progress.progress-danger
+      .bar{:style => "width: 80%"}
+    %small
+      Contributors needed to next match

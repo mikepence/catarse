@@ -1,0 +1,11 @@
+%section.view-items
+  .title
+    %h2
+      = title
+    -#- if campaign_locale.present?
+      %span
+        = campaign_locale
+        = link_to "Change City", "#"
+  .row
+    - projects.each do |p|
+      = render :partial => 'home/placard', :locals => {:project => p}

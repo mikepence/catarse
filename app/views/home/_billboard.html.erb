@@ -1,0 +1,235 @@
+<!-- Slider -->
+<section id="slider">
+<div class="container">
+
+<div class="tabbable tabs-right row">
+<div class="span3 nav-tabs">
+  <h2>Cause Categories</h2>
+  <ul class="nav">
+    <li class="active"><a href="#tab1" data-toggle="tab">Education. School and Learning</a></li>
+    <li><a href="#tab2" data-toggle="tab">Medical and Illness</a></li>
+    <li><a href="#tab3" data-toggle="tab">Non Profit, Charities</a></li>
+    <li><a href="#tab4" data-toggle="tab">Sports, Teams, and Clubs</a></li>
+    <li><a href="#tab5" data-toggle="tab">Missions Faith and Church</a></li>
+    <li><a href="#tab6" data-toggle="tab">Accidents and Personal Crisis</a></li>
+    <li><a href="#tab7" data-toggle="tab">Funerals, Memorial and Tributes</a></li>
+    <li><a href="#tab8" data-toggle="tab">Animals and Pets</a></li>
+    <li><a href="#tab9" data-toggle="tab">Volunteer and Services</a></li>
+  </ul>
+</div>
+<div class="tab-content span9">
+
+<div class="tab-pane active" id="tab1">
+  <div class="main-banner">
+    <a href="<%=  project_path(project) %>">
+      <%= project.display_image %>
+    </a>
+    <div class="caption">
+      <a href="<%=  project_path(project) %>" class="btn-middle pull-right">View project</a>
+      <hgroup>
+        <h1><%= project.name %></h1>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="stats">
+    <li class="vote">
+      <strong>Validation Rating:</strong>
+
+      <div class="stars"></div>
+      <span>(14 ratings)</span>
+    </li>
+    <li class="progress">
+      <div class="progress progress-danger">
+        <div class="bar" style="width: <%= project.display_progress %>%"></div>
+      </div>
+      <ul>
+        <li><strong><%= project.display_progress %>%</strong> funded</li>
+        <li><strong><%= project.display_pledged %></strong> raised</li>
+        <li><strong><%= project.remaining_days %></strong> days left</li>
+      </ul>
+    </li>
+    <li class="contributors">
+      <strong>15</strong>
+
+      <div class="progress progress-danger">
+        <div class="bar" style="width: 80%"></div>
+      </div>
+      <small>Contributors needed to next match</small>
+    </li>
+  </ul>
+  <div class="banners">
+    <dl>
+      <dt><img src="/assets/pictures/best-buy.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Angel</span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="/assets/pictures/ebay.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Contributor</span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="/assets/pictures/campbells.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Benefactor</span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="/assets/pictures/campbells.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Humanitarian</span>
+      </dd>
+    </dl>
+  </div>
+</div>
+
+<div class="tab-pane" id="tab2">
+  <div class="main-banner">
+    <a href="#"><img src="/assets/pictures/main-banner.jpg" alt=""></a>
+
+    <div class="caption">
+      <a href="#" class="btn-middle pull-right">View project</a>
+      <hgroup>
+        <h1>Metal Evolution: Extreme Metal 'The Lost Episodes'</h1>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="stats">
+    <li class="vote">
+      <strong>Validation Rating:</strong>
+
+      <div class="stars"></div>
+      <span>(14 ratings)</span>
+    </li>
+    <li class="progress">
+      <div class="progress progress-danger">
+        <div class="bar" style="width: 80%"></div>
+      </div>
+      <ul>
+        <li><strong>50%</strong> funded</li>
+        <li><strong>$50,000</strong> raised</li>
+        <li><strong>48</strong> days left</li>
+      </ul>
+    </li>
+    <li class="contributors">
+      <strong>15</strong>
+
+      <div class="progress progress-danger">
+        <div class="bar" style="width: 80%"></div>
+      </div>
+      <small>Contributors needed to next match</small>
+    </li>
+  </ul>
+  <div class="banners">
+    <dl>
+      <dt><img src="/assets/pictures/best-buy.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Angel</span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="/assets/pictures/ebay.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Contributor</span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="/assets/pictures/campbells.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Benefactor</span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="/assets/pictures/campbells.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Humanitarian</span>
+      </dd>
+    </dl>
+  </div>
+</div>
+
+<div class="tab-pane" id="tab3">
+  <div class="main-banner">
+    <a href="#"><img src="/assets/pictures/main-banner.jpg" alt=""></a>
+
+    <div class="caption">
+      <a href="#" class="btn-middle pull-right">View project</a>
+      <hgroup>
+        <h1>Metal Evolution: Extreme Metal 'The Lost Episodes'</h1>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="stats">
+    <li class="vote">
+      <strong>Validation Rating:</strong>
+
+      <div class="stars"></div>
+      <span>(14 ratings)</span>
+    </li>
+    <li class="progress">
+      <div class="progress progress-danger">
+        <div class="bar" style="width: 80%"></div>
+      </div>
+      <ul>
+        <li><strong>50%</strong> funded</li>
+        <li><strong>$50,000</strong> raised</li>
+        <li><strong>48</strong> days left</li>
+      </ul>
+    </li>
+    <li class="contributors">
+      <strong>15</strong>
+
+      <div class="progress progress-danger">
+        <div class="bar" style="width: 80%"></div>
+      </div>
+      <small>Contributors needed to next match</small>
+    </li>
+  </ul>
+  <div class="banners">
+    <dl>
+      <dt><img src="/assets/pictures/best-buy.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Angel</span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="/assets/pictures/ebay.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Contributor</span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="/assets/pictures/campbells.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Benefactor</span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><img src="/assets/pictures/campbells.jpg" alt=""></dt>
+      <dd>
+        <div class="stars"></div>
+        <span>Humanitarian</span>
+      </dd>
+    </dl>
+  </div>
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+<!-- #slider -->
