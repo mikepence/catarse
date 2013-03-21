@@ -1,0 +1,188 @@
+<% content_for :body_id, "campaign-setup" %>
+<!-- Profiles Menu -->
+<section id="profile-nav">
+  <div id="profile-tabs">
+    <div class="container">
+      <ul>
+        <li><a href="profile_tab_view.html">Profile</a></li>
+        <li><a href="Donor_tab_view.html">Donor</a></li>
+        <li class="active"><a href="cause-owner_view_tab.html">Cause Owner</a></li>
+        <li><a href="student-Cofunder_tab_edit.html">Student Co-Founder</a></li>
+        <li><a href="sponsor_tab_edit.html">Sponsor</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="profile-info">
+    <div class="container">
+      <%= image_tag("pictures/profile-photo.jpg") %>
+      <dl>
+        <dt>William Hauver</dt>
+        <dd>
+          <div class="vote">
+            <strong>Validation Rating:</strong>
+
+            <div class="stars"></div>
+          </div>
+        </dd>
+      </dl>
+      <a href="cause-owner_edit.html" class="btn-gray">Edit Information</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Page -->
+<section id="page">
+  <div class="container">
+    <div class="row">
+
+      <div class="box-container profile-edit span12" id="causes">
+
+        <h2>Current Cause</h2>
+
+        <div class="box">
+
+          <div id="item-details">
+            <%= image_tag('pictures/thumbnail.jpg', :alt => 'Fueno', :class => 'thumbnail') %>
+
+            <p class="campaign-id"><strong>Campaign ID:</strong> 1233242422</p>
+
+            <h1><a href="#">The High Bar: On the Rocks &amp; Straight up</a></h1>
+
+            <p>The High Bar (http://thehighbar.tv) is on the rocks. After 3 seasons, 70+ episodes &amp; no funding
+              whatsoever, we need YOU to ensure we shoot Season 4.</p>
+          </div>
+
+          <hr>
+
+          <div class="box-half" id="team">
+            <ul class="account-details">
+              <li><strong>Student Co-Founder:</strong></li>
+              <li class="list-heading">
+                <%= image_tag('pictures/avatar-1.jpg') %>
+                <strong>Warren Etheredge</strong><br>
+                <em>Ramapo College</em>
+              </li>
+            </ul>
+            <%= image_tag('pictures/college-middle.jpg', :class => "pull-right") %>
+          </div>
+          <div class="box-half">
+            <ul>
+              <li><strong>Location:</strong> Seattle, Washington, United States</li>
+              <li><strong>Major:</strong> Computer Science</li>
+              <li><strong>Recommended:</strong> Warren Buffet</li>
+            </ul>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <p class="campaign-id"><strong>Funds Raised</strong></p>
+
+          <div class="counters">
+            <strong class="count-3">$20,447</strong>
+          </div>
+          <div class="counters">
+            <div class="progress progress-info">
+              <div style="width: 20%" class="bar"></div>
+            </div>
+            <em class="goal">Raised of $50,000 Goal</em>
+          </div>
+          <div class="counters">
+            <strong class="count-1"><span>10</span> Sponsors</strong>
+            <strong class="count-2"><span>75</span> Contributors</strong>
+          </div>
+          <div class="counters">
+            <div class="countdown">5 <em>days left</em></div>
+          </div>
+
+          <div class="clearfix"></div>
+          <hr>
+
+          <div class="counters">
+            <p class="campaign-id"><strong>Total Matching Donations</strong></p>
+            <strong class="count-3">$10,447</strong>
+          </div>
+          <div class="counters coupons">
+            <p class="campaign-id"><em>Total raised on coupon</em></p>
+            <strong class="count-3">2,000 coupons</strong>
+          </div>
+
+        </div>
+
+        <br>
+
+        <h2>Past Causes</h2>
+
+        <div class="box">
+
+          <div id="item-details">
+            <%= image_tag('pictures/thumbnail.jpg', :alt => 'Fueno', :class => 'thumbnail') %>
+
+            <p class="campaign-id"><strong>Campaign ID:</strong> 1233242422</p>
+
+            <h1><a href="#">The High Bar: On the Rocks &amp; Straight up</a></h1>
+
+            <p>The High Bar (http://thehighbar.tv) is on the rocks. After 3 seasons, 70+ episodes &amp; no funding
+              whatsoever, we need YOU to ensure we shoot Season 4.</p>
+          </div>
+
+          <hr>
+
+          <div class="box-half" id="team">
+            <ul class="account-details">
+              <li><strong>Student Co-Founder:</strong></li>
+              <li class="list-heading">
+                <%= image_tag('pictures/avatar-1.jpg') %>
+                <strong>Warren Etheredge</strong><br>
+                <em>Ramapo College</em>
+              </li>
+            </ul>
+            <%= image_tag('pictures/college-middle.jpg', :class => "pull-right") %>
+
+          </div>
+          <div class="box-half">
+            <ul>
+              <li><strong>Location:</strong> Seattle, Washington, United States</li>
+              <li><strong>Major:</strong> Computer Science</li>
+              <li><strong>Recommended:</strong> Warren Buffet</li>
+            </ul>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <p class="campaign-id"><strong>Funds Raised</strong></p>
+
+          <div class="counters">
+            <strong class="count-3">$20,447</strong>
+          </div>
+          <div class="counters">
+            <div class="progress progress-info">
+              <div style="width: 20%" class="bar"></div>
+            </div>
+            <em class="goal">Raised of $50,000 Goal</em>
+          </div>
+          <div class="counters">
+            <strong class="count-1"><span>10</span> Sponsors</strong>
+            <strong class="count-2"><span>75</span> Contributors</strong>
+          </div>
+          <div class="counters">
+            <div class="countdown">5 <em>days left</em></div>
+          </div>
+
+          <div class="clearfix"></div>
+          <hr>
+
+          <div class="counters">
+            <p class="campaign-id"><strong>Total Matching Donations</strong></p>
+            <strong class="count-3">$10,447</strong>
+          </div>
+          <div class="counters coupons">
+            <p class="campaign-id"><em>Total raised on coupon</em></p>
+            <strong class="count-3">2,000 coupons</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- #page -->
+

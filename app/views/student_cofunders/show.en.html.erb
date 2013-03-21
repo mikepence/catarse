@@ -1,0 +1,284 @@
+<% content_for :body_id, "cofunder" %>
+
+<!-- Profiles Menu -->
+<section id="profile-nav">
+  <div id="profile-tabs">
+    <div class="container">
+      <ul>
+        <li><a href="profile_tab_view.html">Profile</a></li>
+        <li><a href="Donor_tab_view.html">Donor</a></li>
+        <li><a href="cause-owner_view_tab.html">Cause Owner</a></li>
+        <li class="active"><a href="student-Cofunder_tab_edit.html">Student Co-Founder</a></li>
+        <li><a href="sponsor_tab_edit.html">Sponsor</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="profile-info">
+    <div class="container">
+      <%= image_tag('pictures/profile-photo.jpg') %>
+      <dl>
+        <dt>William Hauver</dt>
+        <dd>
+          <div class="vote">
+            <strong>Validation Rating:</strong>
+
+            <div class="stars"></div>
+          </div>
+        </dd>
+      </dl>
+      <a href="student-Cofunder page (non tab).html" class="btn-gray">View Profile</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Page -->
+<section id="page">
+<div class="container">
+  <div class="row">
+    <section id="content">
+
+      <div class="span8">
+
+        <section id="user-profile">
+          <div class="photo">
+            <%= image_tag('pictures/user.jpg', :class => "thumbnail") %>
+            <a href="#">Add a Photo</a>
+          </div>
+          <div class="user-info">
+            <%= image_tag('pictures/ramapo.jpg', :class => "logo") %>
+
+            <h1 data-edit="edit">Chris Hauver</h1>
+
+            <h2 data-edit="edit">at Ramapo College</h2>
+            <ul class="state" data-edit="edit">
+              <li>Boise, Idaho Area</li>
+              <li>General Studies</li>
+            </ul>
+            <ul class="bio">
+              <li data-edit="edit">
+                <strong>Previous High School:</strong>
+
+                <div>Baker High School</div>
+              </li>
+              <li>
+                <strong>Education:</strong>
+
+                <div data-edit="edit">
+                  BYU<br>
+                  Bachelor of Science (BS), Duel major Computer Science & Statistics<br>
+                  1982 – 1986
+                </div>
+              </li>
+              <li data-edit="edit">
+                <strong>Social Club:</strong>
+
+                <div>Apple User Group</div>
+              </li>
+              <li><strong>Organizations:</strong></li>
+            </ul>
+          </div>
+          <div id="all-projects">
+            <ul>
+              <li><a href="#">Recent<br>Projects</a></li>
+
+              <li><%= image_tag('pictures/recent-1.jpg') %><span>Enim</span></li>
+              <li><%= image_tag('pictures/recent-2.jpg') %><span>Enim</span></li>
+              <li><%= image_tag('pictures/recent-1.jpg') %><span>Enim</span></li>
+              <li><%= image_tag('pictures/recent-2.jpg') %><span>Enim</span></li>
+              <li class="more"><a href="#">more &raquo;</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Past<br>Projects</a></li>
+              <li><%= image_tag('pictures/recent-1.jpg') %><span>Enim</span></li>
+              <li><%= image_tag('pictures/recent-2.jpg') %><span>Enim</span></li>
+              <li><%= image_tag('pictures/recent-1.jpg') %><span>Enim</span></li>
+              <li><%= image_tag('pictures/recent-2.jpg') %><span>Enim</span></li>
+              <li class="more"><a href="#">more &raquo;</a></li>
+            </ul>
+          </div>
+          <div class="user-rate">
+            <strong>Social Cause Rating (SCR):</strong>
+
+            <div class="stars" data-score="3"></div>
+            <span>(Angel)</span>
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="span4 user-sidebar">
+        <h2 class="section-title-big">Total funds I've raised for education:</h2>
+
+        <div class="aside-box" id="total-raised">
+          <strong>$20,447</strong>
+        </div>
+        <h2 class="section-title-big">What I’ve spent my education funds on:</h2>
+
+        <div class="aside-box" id="fund-activities" data-edit="edit-delete">
+          <iframe src="http://player.vimeo.com/video/47218763?title=0&amp;portrait=0&amp;badge=0" width="272" height="195" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <h4>Condimentum Tempus</h4>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum tempus lorem, aliquet
+            tellus mattis.</p>
+        </div>
+      </aside>
+
+    </section>
+
+    <div class="box-container static-text span12" id="payment-information">
+      <div class="box">
+        <div class="box-half" data-edit="edit-delete">
+          <h3>Paypal Information</h3>
+          <dl>
+            <dt>Paypal email address:</dt>
+            <dd>chauver@gmail.com</dd>
+          </dl>
+          <a class="btn-gray" href="#">Delete Paypal Information</a>
+        </div>
+        <div class="box-half" data-edit="edit-delete">
+          <h3>Bank Account Information</h3>
+          <dl>
+            <dt>Account Name</dt>
+            <dd>chauver@gmail.com</dd>
+          </dl>
+          <dl>
+            <dt>Account Number</dt>
+            <dd>6871343541716</dd>
+          </dl>
+          <a class="btn-gray" href="#">Delete Bank Information</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="txt span12">
+      <h2 data-edit="edit">My Story</h2>
+
+      <h3 data-edit="edit">Blog with Media</h3>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum tempus lorem, at aliquet
+        tellus mattis non. Cras justo dolor, feugiat eu porta porta, hendrerit at nulla. Fusce dignissim suscipit purus,
+        et vehicula felis rhoncus at. Nullam sed tellus orci. Quisque consectetur euismod nisl sit amet fringilla.
+        Aliquam commodo gravida consectetur. Sed adipiscing, justo a interdum posuere, sem lacus venenatis justo, quis
+        sagittis ligula tellus sed nunc.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum tempus lorem, at aliquet
+        tellus mattis non. Cras justo dolor, feugiat eu porta porta, hendrerit at nulla. Fusce dignissim suscipit purus,
+        et vehicula felis rhoncus at. Nullam sed tellus orci. Quisque consectetur euismod nisl sit amet fringilla.
+        Aliquam commodo gravida consectetur. Sed adipiscing, justo a interdum posuere, sem lacus venenatis justo, quis
+        sagittis ligula tellus sed nunc.</p>
+
+      <p>Nullam sed tellus orci. Quisque consectetur euismod nisl sit amet fringilla. Aliquam commodo gravida
+        consectetur. Sed adipiscing, justo a interdum posuere, sem lacus venenatis justo, quis sagittis ligula tellus
+        sed nunc.</p>
+
+      <h3 data-edit="edit">Community Involvement</h3>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum tempus lorem, at aliquet
+        tellus mattis non. Cras justo dolor, feugiat eu porta porta, hendrerit at nulla. Fusce dignissim suscipit purus,
+        et vehicula felis rhoncus at.</p>
+
+      <h3 data-edit="edit">Achivements</h3>
+
+      <p>Cras justo dolor, feugiat eu porta porta, hendrerit at nulla. Fusce dignissim suscipit purus, et vehicula felis
+        rhoncus at. Nullam sed tellus orci. Quisque consectetur euismod nisl sit amet fringilla. Aliquam commodo gravida
+        consectetur. Sed adipiscing, justo a interdum posuere, sem lacus venenatis justo, quis sagittis ligula tellus
+        sed nunc.</p>
+    </section>
+
+    <section class="txt span8" id="skills">
+      <h2>Skills <span>Click + to valudate skills</span></h2>
+      <dl data-edit="delete">
+        <dd>
+          <ul>
+            <li><a href="#"><%= image_tag('pictures/s1.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s2.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s3.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s4.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s5.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s6.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s7.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s8.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s9.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s10.jpg') %></a></li>
+          </ul>
+        </dd>
+        <dt>
+          <span>12</span><strong>Multimedia</strong><a href="#"></a>
+        </dt>
+      </dl>
+      <dl data-edit="delete">
+        <dd>
+          <ul>
+            <li><a href="#"><%= image_tag('pictures/s5.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s6.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s7.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s8.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s9.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s10.jpg') %></a></li>
+          </ul>
+        </dd>
+        <dt>
+          <span>12</span><strong>Cause Marketer</strong><a href="#"></a>
+        </dt>
+      </dl>
+      <dl data-edit="delete">
+        <dd>
+          <ul>
+            <li><a href="#"><%= image_tag('pictures/s1.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s2.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s3.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s4.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s5.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s6.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s7.jpg') %></a></li>
+          </ul>
+        </dd>
+        <dt>
+          <span>12</span><strong>Cause Networker</strong><a href="#"></a>
+        </dt>
+      </dl>
+      <dl data-edit="delete">
+        <dd>
+          <ul>
+            <li><a href="#"><%= image_tag('pictures/s4.jpg') %></a></li>
+            <li><a href="#"><%= image_tag('pictures/s9.jpg') %></a></li>
+          </ul>
+        </dd>
+        <dt>
+          <span>12</span><strong>Cmapaign Manager</strong><a href="#"></a>
+        </dt>
+      </dl>
+    </section>
+
+    <aside class="span4">
+      <div id="recommendations">
+        <h2>Recommendations</h2>
+        <a href="#" class="add-item">
+          <h4>Recommend Studet For a Cause</h4>
+          We welcome any recommendations for this student. <u>Click Here</u>
+        </a>
+        <dl data-edit="delete">
+          <dt><%= image_tag('pictures/recommend.jpg') %></dt>
+          <dd>
+            <h4>John Doe <span>(Sponsor)</span></h4>
+
+            <p>Cras justo dolor, feugiat eu porta porta, hendrerit at nulla. Fusce dignissim suscipit purus, et vehicula
+              felis rhoncus</p>
+          </dd>
+        </dl>
+        <dl data-edit="delete">
+          <dt><%= image_tag('pictures/recommend.jpg') %></dt>
+          <dd>
+            <h4>John Doe <span>(Sponsor)</span></h4>
+
+            <p>Cras justo dolor, feugiat eu porta porta, hendrerit at nulla. Fusce dignissim suscipit purus, et vehicula
+              felis rhoncus</p>
+          </dd>
+        </dl>
+      </div>
+    </aside>
+
+  </div>
+</div>
+</section><!-- #page -->

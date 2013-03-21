@@ -16,13 +16,13 @@ $(function() {
 		
 		$(".vote .stars").raty({
 			readOnly: false,
-			path: "assets/img/",
+			path: "/assets/",
 			score: 3
 		});
 		
 		$(".banners .stars, .item .rating .stars, .item-mini .rating .stars, #rate .stars").raty({
 			readOnly: false,
-			path: "assets/img/",
+			path: "/assets/",
 			score: 3,
 			size: 17,
 			starOn  : 'star-1-on.png',
@@ -33,7 +33,7 @@ $(function() {
 			var rating = $(this).attr("data-score");
 			$(this).raty({
 		  		readOnly: true,
-		  		path: "assets/img/",
+		  		path: "/assets/",
 		  		score: rating,
 		  		number: rating,
 				size: 17,
@@ -46,7 +46,7 @@ $(function() {
 			var rating = $(this).attr("data-score");
 			$(this).raty({
 		  		readOnly: true,
-		  		path: "assets/img/",
+		  		path: "/assets/",
 		  		score: rating,
 		  		number: rating,
 				size: 27,
@@ -58,7 +58,7 @@ $(function() {
 			var rating = $(this).attr("data-score");
 			$(this).raty({
 		  		readOnly: false,
-		  		path: "assets/img/",
+		  		path: "/assets/",
 		  		score: rating,
 				size: 20,
 		  		starOn  : 'star-4-on.png',
