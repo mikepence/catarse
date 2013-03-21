@@ -1,0 +1,8 @@
+= render :partial => 'projects/billboard', :locals => {:project => @marquee_project}
+
+%section#page
+  .container
+    = render :partial => 'projects/placard_panel', :locals => {:title => 'Local Campaigns', :campaign_locale => 'Farmington, UT', :projects => @local_projects}
+    = render :partial => 'projects/placard_panel', :locals => {:title => 'Final Countdown', :projects => @expiring_projects}
+    = render :partial => 'projects/featured_campaign'
+    -#<%-# render_widget(:featured_project) if @featured_project %>

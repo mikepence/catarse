@@ -82,6 +82,13 @@ class Project < ActiveRecord::Base
     order('random()').
     limit(4)
   }
+  scope :random, -> {
+    includes(:user, :category, :project_total).
+        visible.
+        not_expired.
+        order('random()').
+        limit(4)
+  }
   scope :order_for_search, ->{ reorder("
                                      CASE state
                                      WHEN 'online' THEN 1
