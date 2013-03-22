@@ -45,6 +45,7 @@ Catarse::Application.routes.draw do
   match "/core_values" => "static_pages#core_values"
   match "/mission" => "static_pages#mission"
   match "/fueno_university" => "static_pages#fueno_university"
+  match "/new_pages" => "static_pages#new_pages"
 
   match "/explore" => "explore#index", :as => :explore
   match "/explore#:quick" => "explore#index", :as => :explore_quick

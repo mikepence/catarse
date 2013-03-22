@@ -3,6 +3,7 @@ class CauseOwnersController < ApplicationController
 
   load_and_authorize_resource only: [ :new, :update, :update, :destroy ]
 
-  inherit_resources
+  def show
 
+  end
 end

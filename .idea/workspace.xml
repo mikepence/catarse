@@ -2,101 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b0759ec-947e-490d-a335-a7a94ae14007" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130321205504_create_cause_owners.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130321223737_create_donors.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130321224533_create_profiles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130321225131_create_sponsors.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130321230639_create_student_cofunders.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/donors/_form.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profiles/_form.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sponsors/_form.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/student_cofunders/_form.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/cause_owner.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/core_values.en.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/donor.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/cause_owners/edit.en.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/donors/edit.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profiles/edit.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sponsors/edit.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/student_cofunders/edit.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/fueno.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/fueno_university.en.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/donors/index.en.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profiles/index.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sponsors/index.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/student_cofunders/index.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/mission.en.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/donors/new.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profiles/new.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sponsors/new.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/student_cofunders/new.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/profile.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/cause_owners/show.en.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profiles/show.en.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sponsors/show.en.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/student_cofunders/show.en.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/projects/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/donors/show.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/sponsor.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/student_cofunder.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/student_cofunders_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/campaigns.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/categories.css.scss" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/projects/show.html.slim" afterPath="$PROJECT_DIR$/app/views/projects/legacy-show.html.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/Cause -Campaign-Page-Brent-V2_rev.html" afterPath="$PROJECT_DIR$/public/static/Cause -Campaign-Page-Brent-V2_rev.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/Donor_tab.html" afterPath="$PROJECT_DIR$/public/static/Donor_tab.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/Donor_tab_view.html" afterPath="$PROJECT_DIR$/public/static/Donor_tab_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/cause-owner_edit.html" afterPath="$PROJECT_DIR$/public/static/cause-owner_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/cause-owner_view_tab.html" afterPath="$PROJECT_DIR$/public/static/cause-owner_view_tab.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/core-values.html" afterPath="$PROJECT_DIR$/public/static/core-values.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/coupon_pay.html" afterPath="$PROJECT_DIR$/public/static/coupon_pay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/coupon_purchase_page.html" afterPath="$PROJECT_DIR$/public/static/coupon_purchase_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/coupon_set_up.html" afterPath="$PROJECT_DIR$/public/static/coupon_set_up.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/coupon_share.html" afterPath="$PROJECT_DIR$/public/static/coupon_share.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/coupon_start.html" afterPath="$PROJECT_DIR$/public/static/coupon_start.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/design.html" afterPath="$PROJECT_DIR$/public/static/design.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/donate_coupon_contribute(start).html" afterPath="$PROJECT_DIR$/public/static/donate_coupon_contribute(start).html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/donate_coupon_pay.html" afterPath="$PROJECT_DIR$/public/static/donate_coupon_pay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/donate_coupon_share.html" afterPath="$PROJECT_DIR$/public/static/donate_coupon_share.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/fueno-university.html" afterPath="$PROJECT_DIR$/public/static/fueno-university.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/get-funded.html" afterPath="$PROJECT_DIR$/public/static/get-funded.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/get_sponsored.html" afterPath="$PROJECT_DIR$/public/static/get_sponsored.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/homepage_with_pull-down.html" afterPath="$PROJECT_DIR$/public/static/homepage_with_pull-down.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/ignite.html" afterPath="$PROJECT_DIR$/public/static/ignite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/index.en.html.haml" afterPath="$PROJECT_DIR$/app/views/projects/index.en.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/app/main.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/app/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/matching_choice.html" afterPath="$PROJECT_DIR$/public/static/matching_choice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/matching_pay.html" afterPath="$PROJECT_DIR$/public/static/matching_pay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/matching_share.html" afterPath="$PROJECT_DIR$/public/static/matching_share.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/matching_start.html" afterPath="$PROJECT_DIR$/public/static/matching_start.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/mission.html" afterPath="$PROJECT_DIR$/public/static/mission.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/profile_tab_edit.html" afterPath="$PROJECT_DIR$/public/static/profile_tab_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/profile_tab_edit_2.html" afterPath="$PROJECT_DIR$/public/static/profile_tab_edit_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/profile_tab_view.html" afterPath="$PROJECT_DIR$/public/static/profile_tab_view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/new_pages.en.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/cause_owners_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/cause_owners_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/donors_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/donors_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donors/index.en.html.erb" afterPath="$PROJECT_DIR$/app/views/donors/index.en.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/search_for_a_cause.html" afterPath="$PROJECT_DIR$/public/static/search_for_a_cause.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/search_for_a_student_Cofunder.html" afterPath="$PROJECT_DIR$/public/static/search_for_a_student_Cofunder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/all/setup.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/all/setup.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/sponsor_page.html" afterPath="$PROJECT_DIR$/public/static/sponsor_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/sponsor_tab_edit.html" afterPath="$PROJECT_DIR$/public/static/sponsor_tab_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/start.html" afterPath="$PROJECT_DIR$/public/static/start.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/step_2_confirm_and_pay.html" afterPath="$PROJECT_DIR$/public/static/step_2_confirm_and_pay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/student-Cofunder page (non tab).html" afterPath="$PROJECT_DIR$/public/static/student-Cofunder page (non tab).html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/student-Cofunder_tab_edit.html" afterPath="$PROJECT_DIR$/public/static/student-Cofunder_tab_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/all/styles.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/all/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/css/styles.css" afterPath="$PROJECT_DIR$/public/static/assets/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fueno.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,10 +19,10 @@
     <file path="/show.html.erb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363893591637" ignored="false" />
     <file path="/setup.css" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363894519313" ignored="false" />
     <file path="/styles.css" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363894844491" ignored="false" />
-    <file path="/cause_owners_controller.rb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363899419626" ignored="false" />
-    <file path="/routes.rb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363905808329" ignored="false" />
+    <file path="/cause_owners_controller.rb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363910985675" ignored="false" />
+    <file path="/routes.rb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363910792414" ignored="false" />
     <file path="/show.en.html.erb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363908009944" ignored="false" />
-    <file path="/static_pages_controller.rb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363905679772" ignored="false" />
+    <file path="/static_pages_controller.rb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363910756404" ignored="false" />
     <file path="/core_values.en.html.erb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363901853593" ignored="false" />
     <file path="/scratch.html" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363902725374" ignored="false" />
     <file path="/mission.en.html.erb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363902941812" ignored="false" />
@@ -118,6 +30,10 @@
     <file path="/sponsors_controller.rb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363906498014" ignored="false" />
     <file path="/student_cofunders_controller.rb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363907237823" ignored="false" />
     <file path="/a.dummy" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363907517164" ignored="false" />
+    <file path="/new-pages.html" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363910026861" ignored="false" />
+    <file path="/new_pages.en.html.erb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363911502964" ignored="false" />
+    <file path="/donors_controller.rb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363911124328" ignored="false" />
+    <file path="/index.en.html.erb" changelist="2b0759ec-947e-490d-a335-a7a94ae14007" time="1363911220981" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,51 +50,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="coupon_start.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/static/coupon_start.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="10" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-6.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="donate_coupon_share.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/static/donate_coupon_share.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="10" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-6.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matching_share.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/static/matching_share.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="10" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-6.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matching_start.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/static/matching_start.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="10" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-6.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sponsor_page.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/static/sponsor_page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="10" selection-start="1401" selection-end="1401" vertical-scroll-proportion="-6.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sponsor_tab_edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/static/sponsor_tab_edit.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -209,16 +80,52 @@
       <file leaf-file-name="scratch.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scratch.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="38" selection-start="50" selection-end="50" vertical-scroll-proportion="-1.4193548">
+            <state line="11" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="-7.806452">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scaffolds.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scaffolds.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="14" column="28" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="static_pages_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_pages.en.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/static_pages/new_pages.en.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="69" selection-start="247" selection-end="247" vertical-scroll-proportion="0.4888889">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="donors_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/donors_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="2" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.en.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/donors/index.en.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="10" selection-start="601" selection-end="601" vertical-scroll-proportion="-6.322581">
               <folding />
             </state>
           </provider>
@@ -242,13 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/static/profile_tab_view.html" />
-        <option value="$PROJECT_DIR$/public/static/search_for_a_cause.html" />
-        <option value="$PROJECT_DIR$/public/static/search_for_a_student_Cofunder.html" />
-        <option value="$PROJECT_DIR$/public/static/start.html" />
-        <option value="$PROJECT_DIR$/public/static/step_2_confirm_and_pay.html" />
-        <option value="$PROJECT_DIR$/public/static/assets/css/styles.css" />
-        <option value="$PROJECT_DIR$/public/static/coupon_start.html" />
         <option value="$PROJECT_DIR$/public/static/donate_coupon_share.html" />
         <option value="$PROJECT_DIR$/public/static/matching_share.html" />
         <option value="$PROJECT_DIR$/public/static/matching_start.html" />
@@ -258,6 +158,13 @@
         <option value="$PROJECT_DIR$/public/static/student-Cofunder_tab_edit.html" />
         <option value="$PROJECT_DIR$/app/views/student_cofunders/show.en.html.erb" />
         <option value="$PROJECT_DIR$/scratch.html" />
+        <option value="$PROJECT_DIR$/public/new-pages.html" />
+        <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/cause_owners_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/donors_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/donors/index.en.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/new_pages.en.html.erb" />
       </list>
     </option>
   </component>
@@ -308,76 +215,6 @@
               <option name="myItemId" value="fueno" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fueno" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actionpack (v3.2.12, RVM: ruby-1.9.3-p392 [fueno]) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fueno" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actionpack (v3.2.12, RVM: ruby-1.9.3-p392 [fueno]) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action_view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fueno" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actionpack (v3.2.12, RVM: ruby-1.9.3-p392 [fueno]) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action_view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -400,24 +237,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fueno" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fueno" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -463,11 +282,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -485,7 +300,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static_pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fueno" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fueno" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="donors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fueno" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fueno" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -898,62 +757,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/static/start.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="77" selection-start="2993" selection-end="2993" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/step_2_confirm_and_pay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="77" selection-start="3075" selection-end="3075" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/Cause -Campaign-Page-Brent-V2_rev.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="85" selection-start="2851" selection-end="2851" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/assets/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1710" column="5" selection-start="44421" selection-end="44421" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/coupon_share.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="10" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/coupon_start.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="10" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/donate_coupon_share.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="10" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/matching_share.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="10" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/matching_start.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="10" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-6.0">
@@ -996,16 +799,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scratch.html">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="38" selection-start="50" selection-end="50" vertical-scroll-proportion="-1.4193548">
+        <state line="14" column="28" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+    <entry file="file://$PROJECT_DIR$/scratch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="-7.806452">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="40" selection-start="548" selection-end="548" vertical-scroll-proportion="0.07530648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/cause_owners_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="154" selection-end="154" vertical-scroll-proportion="0.23117338">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/donors/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/donors_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="2" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/donors/index.en.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="10" selection-start="601" selection-end="601" vertical-scroll-proportion="-6.322581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/new_pages.en.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="69" selection-start="247" selection-end="247" vertical-scroll-proportion="0.4888889">
           <folding />
         </state>
       </provider>
