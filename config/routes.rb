@@ -2,6 +2,18 @@ require 'sidekiq/web'
 
 Catarse::Application.routes.draw do
 
+  resources :student_cofunders
+
+
+  resources :sponsors
+
+
+  resources :profiles
+
+
+  resources :donors
+
+
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
 
   check_user_admin = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.admin }
@@ -30,6 +42,11 @@ Catarse::Application.routes.draw do
   match "/about" => "static#about", :as => :about
   match "/faq" => "static#faq", :as => :faq
 
+  match "/core_values" => "static_pages#core_values"
+  match "/mission" => "static_pages#mission"
+  match "/fueno_university" => "static_pages#fueno_university"
+  match "/new_pages" => "static_pages#new_pages"
+
   match "/explore" => "explore#index", :as => :explore
   match "/explore#:quick" => "explore#index", :as => :explore_quick
   match "/credits" => "credits#index", :as => :credits
@@ -40,6 +57,8 @@ Catarse::Application.routes.draw do
   namespace :reports do
     resources :backer_reports_for_project_owners, only: [:index]
   end
+
+  resources :cause_owners
 
   resources :projects do
     resources :updates, only: [ :index, :create, :destroy ]

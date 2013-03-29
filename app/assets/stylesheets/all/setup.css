@@ -23,7 +23,7 @@
 	float: right;
 	padding-right: 20px;
 	text-transform: uppercase;
-	background: url("../img/dropdown.png") 100% 5px no-repeat;
+	background: url("/assets/dropdown.png") 100% 5px no-repeat;
 	color: #fff;
 }
 
@@ -71,10 +71,10 @@
 	font-size: 13px;
 	color: #414141;
 	text-indent: 3px;
-	background: url("../img/step-inactive.png") 100% 0 no-repeat;
+	background: url("/assets/step-inactive.png") 100% 0 no-repeat;
 }
 #form-steps li a:hover { text-decoration: none; }
-#form-steps li.active a { background-image: url("../img/step-active.png"); color: #fff; }
+#form-steps li.active a { background-image: url("/assets/step-active.png"); color: #fff; }
 #form-steps li span {
 	float: left;
 	text-indent: 0;
@@ -84,9 +84,9 @@
 	line-height: 16px;
 	font-size: 11px;
 	margin: 2px 6px 0 4px;
-	background: url("../img/step-num.png") 100% 0 no-repeat;
+	background: url("/assets/step-num.png") 100% 0 no-repeat;
 }
-#form-steps li.active span { background-image: url("../img/step-num-a.png"); }
+#form-steps li.active span { background-image: url("/assets/step-num-a.png"); }
 
 #form-categories > div, #form-sponsor-options > div { margin: 30px 21px 22px; font-size: 14px; }
 #form-categories > div { margin-top: 0; }
@@ -108,7 +108,7 @@
 	margin-bottom: 10px;
 	padding: 7px 0;
 	font-weight: bold;
-	background: #c9ac6f url("../img/categories-bg.png") 0 0 repeat-x;
+	background: #c9ac6f url("/assets/categories-bg.png") 0 0 repeat-x;
 }
 #form-categories li a:hover { text-decoration: none; }
 
@@ -288,7 +288,7 @@
 	font-size: 11px;
 	padding-top: 4px;
 }
-.usd-sign { background: url("../img/usd.png") 100% 6px no-repeat; }
+.usd-sign { background: url("/assets/usd.png") 100% 6px no-repeat; }
 .calendar-sign { margin: -13px 0 0 8px; float: right; }
 #cause-owner .calendar-sign { margin: 3px 0 0 10px; float: right; }
 #form-perks label,
@@ -340,7 +340,7 @@
 }
 
 #form-ready > .box {
-	background: #E7E8E9 url("../img/warning.png") 32px center no-repeat;
+	background: #E7E8E9 url("/assets/warning.png") 32px center no-repeat;
 	padding-left: 114px;
 	min-height: 70px;
 	font-size: 12px;
@@ -350,7 +350,7 @@
 
 a#remove {
 	float: right;
-	background: url("../img/remove.png") 0 0 no-repeat;
+	background: url("/assets/remove.png") 0 0 no-repeat;
 	padding: 4px 0 6px 34px;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -385,7 +385,7 @@ a#remove {
 #form-media .btn-red { margin: 0; margin-left: 270px; clear: left; }
 
 .btn-fancy, .btn-gray, .btn-red, .btn-green, .btn-gold {
-	background: url("../img/fancy-button.png") 100% 0 no-repeat;
+	background: url("/assets/fancy-button.png") 100% 0 no-repeat;
 	display: block;
 	float: left;
 	height: 37px;
@@ -402,7 +402,7 @@ a#remove {
 .btn-fancy { margin: 15px 0 0 15px; float: right; }
 .btn-fancy:hover, .btn-gray:hover, .btn-red:hover { text-decoration: none; color: #fff; }
 .btn-fancy span {
-	background: url("../img/fancy-button.png") 0 0 no-repeat;
+	background: url("/assets/fancy-button.png") 0 0 no-repeat;
 	float: left;
 	width: 39px;
 	height: 37px;
@@ -410,7 +410,7 @@ a#remove {
 	font-size: 15px;
 }
 .btn-gray, .btn-red, .btn-green, .btn-gold {
-	background: url("../img/gray-buttons.png") 100% 0 no-repeat;
+	background: url("/assets/gray-buttons.png") 100% 0 no-repeat;
 	padding-right: 36px;
 	padding-left: 15px;
 	color: #565656;
@@ -426,19 +426,19 @@ a#add, a.add-btn {
 	padding-right: 15px;
 }
 .btn-red {
-	background: #6b0003 url("../img/red-button.png") 0 0 repeat-x;
+	background: #6b0003 url("/assets/red-button.png") 0 0 repeat-x;
 	color: #fff;
 	border-color: #4a0002;
 	padding-right: 16px;
 }
 .btn-green {
-	background: #6b0003 url("../img/green-button.png") center repeat-x;
+	background: #6b0003 url("/assets/green-button.png") center repeat-x;
 	color: #264c00;
 	border-color: #50a000;
 	padding-right: 16px;
 }
 .btn-gold {
-	background: #d4c397 url("../img/btn-gold.png") center repeat-x;
+	background: #d4c397 url("/assets/btn-gold.png") center repeat-x;
 	color: #735114;
 	border-color: #a18b62;
 	padding-right: 16px;
@@ -500,7 +500,7 @@ a#add, a.add-btn {
 	text-transform: uppercase;
 	padding: 4px 10px 6px;
 	text-align: center;
-	background: url("../img/gray-buttons.png") center no-repeat;
+	background: url("/assets/gray-buttons.png") center no-repeat;
 	text-decoration: none;
 	-moz-border-radius:2px;
 	-webkit-border-radius:2px;
@@ -542,7 +542,7 @@ input.customfile-button {
    width: 97px;
    cursor: pointer;
 }
-.file_button_container { background: url("../img/upload-button.jpg") 0 0 no-repeat; }
+.file_button_container { background: url("/assets/upload-button.jpg") 0 0 no-repeat; }
 .file_button_container input { opacity: 0; }
 
 .profile-edit .image { margin-bottom: 10px; }

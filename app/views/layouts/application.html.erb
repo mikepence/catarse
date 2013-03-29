@@ -19,44 +19,51 @@
   <%= csrf_meta_tags %>
 </head>
 
-<body>
-<!-- Header -->
+<body id="<%= yield :body_id %>">
 <header id="header">
   <div class="container">
-    <a href="/" id="logo">
-      <%= image_tag('logo.png', :alt => 'Fueno') %>
-    </a>
+    <a href="homepage.html" id="logo"><%= image_tag('logo.png', :alt => 'Fueno') %></a>
     <nav id="main-navigation">
       <ul>
-        <li><a href="/pages/what_is_fueno">What is <br>FUENO?</a></li>
-        <li><a href="/pages/start_campaign">Start<span> a new campaign</span></a></li>
-        <li><a href="/pages/donate">Donate<span> to a great cause</span></a></li>
-        <li><a href="/pages/what_is_fueno">Co-Fund<span> your education</span></a></li>
+        <li><a href="mission.html">What is <br>FUENO?</a></li>
+        <li><a href="start.html">Start <span>new campaign</span></a></li>
+        <li><a href="search_for_a_cause.html">Sponsor <span>a great cause</span></a></li>
+        <li><a href="#">Co-Fund <span>your education</span></a></li>
       </ul>
     </nav>
     <aside>
-      <form action="#" id="search-form">
-        <input type="text" placeholder="Search&hellip;" name="query" id="query">
-      </form>
       <nav>
         <ul>
-          <li>
-            <%= link_to "Sign Up", "#" %>
+          <li class="pull-down">
+            <a href="#">Username <b class="caret"></b></a>
+            <ul>
+              <li><strong>My Account</strong></li>
+              <li><a href="profile_tab_view.html">My Profile</a></li>
+              <li><a href="profile_tab_edit.html">Edit Settings</a></li>
+              <li><a href="Donor_tab_view.html">My Donations</a></li>
+              <li><a href="cause-owner_view_tab.html">My Causes</a></li>
+              <li><a href="sponsor_page.html">My Sponsorship</a></li>
+              <li><a href="student-Cofunder_tab_edit.html">Student CoFunder</a></li>
+              <li class="logout-link"><a href="homepage.html">Log Out</a></li>
+            </ul>
           </li>
-
-          <li>
-            <%= link_to "Log In", "#" %>
-          </li>
+          <li><a href="#">Me</a></li>
         </ul>
       </nav>
     </aside>
   </div>
   <nav id="action-navigation">
-    <ul>
-      <li><a href="#">Validate <strong>Someone</strong></a></li>
-      <li><a href="#">Become a <strong>Sponsor</strong></a></li>
-      <li><a href="#"><strong>Fueno</strong> University</a></li>
-    </ul>
+    <div class="container">
+      <form action="#" id="search-form">
+        <input type="text" placeholder="Search&hellip;" name="query" id="query">
+      </form>
+      <ul>
+        <li><a href="#"><strong>Vouch</strong> for a cause</a></li>
+        <li><a href="#">Recommend a Student <strong>Co-Funder</strong></a></li>
+        <li><a href="#">Become a <strong>Sponsor</strong></a></li>
+        <li><a href="fueno-university.html"><strong>Fueno</strong> University</a></li>
+      </ul>
+    </div>
   </nav>
 </header>
 <!-- #header -->
@@ -65,72 +72,71 @@
 
 <!-- Footer -->
 <footer id="footer">
-  <div class="container">
-    <section>
-      <div>
-        <div id="copyright">&copy; 2012 Copyright Fueno. <br>All Rights Reserved</div>
-        <nav>
-          <ul>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Distribution</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <section>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="#">Learn More</a></li>
-            <li><a href="#">Why Fueno?</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Non-Profits</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <section>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="#">Customer Happiness</a></li>
-            <li><a href="#">Crowdfunding Tips</a></li>
-            <li><a href="#">Contribution Basics</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <section>
-      <div>
-        <nav id="connect">
-          <h3>Connect With Fueno</h3>
-          <ul>
-            <li><a href="#"><img src="/assets/i-facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="/assets/i-twitter.png" alt=""></a></li>
-            <li><a href="#"><img src="/assets/i-rss.png" alt=""></a></li>
-            <li><a href="#"><img src="/assets/i-youtube.png" alt=""></a></li>
-          </ul>
-        </nav>
-        <form action="#" id="subscribe-form">
-          <h3>Sign up for Fueno News</h3>
-          <input type="text" placeholder="Enter Your E-mail&hellip;" name="query" id="query">
-        </form>
-      </div>
-    </section>
-  </div>
-</footer>
-<!-- #footer -->
+	<div class="container">
+        <section>
+        	<div>
+                <div id="copyright">&copy; 2012 Copyright Fueno. <br>All Rights Reserved</div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Distribution</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+        	<div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Learn More</a></li>
+                        <li><a href="#">Why Fueno?</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Non-Profits</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+        	<div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Customer Happiness</a></li>
+                        <li><a href="#">Crowdfunding Tips</a></li>
+                        <li><a href="#">Contribution Basics</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+        	<div>
+                <nav id="connect">
+                    <h3>Connect With Fueno</h3>
+                    <ul>
+                        <li><a href="#"><%= image_tag('i-facebook.png') %></a></li>
+                        <li><a href="#"><%= image_tag('i-twitter.png') %></a></li>
+                        <li><a href="#"><%= image_tag('i-rss.png') %></a></li>
+                        <li><a href="#"><%= image_tag('i-youtube.png') %></a></li>
+                    </ul>
+                </nav>
+                <form action="#" id="subscribe-form">
+                    <h3>Sign up for Fueno News</h3>
+                    <input type="text" placeholder="Enter Your E-mail&hellip;" name="query" id="query">
+                </form>
+            </div>
+        </section>
+    </div>
+</footer><!-- #footer -->
 
 </body>
 </html>

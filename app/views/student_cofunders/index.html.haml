@@ -1,0 +1,19 @@
+%h1 Listing student_cofunders
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @student_cofunders.each do |student_cofunder|
+    %tr
+      %td= student_cofunder.name
+      %td= link_to 'Show', student_cofunder
+      %td= link_to 'Edit', edit_student_cofunder_path(student_cofunder)
+      %td= link_to 'Destroy', student_cofunder, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Student cofunder', new_student_cofunder_path
