@@ -1,0 +1,166 @@
+<% content_for :body_id, "campaign-setup" %>
+
+<!-- Page -->
+<section id="page">
+   	<div class="container">
+        <div class="row">
+
+               <form action="#">
+
+                   <div class="span12"><h2 id="campaign-id">Campaign ID: <span>08770778786</span></h2></div>
+
+                   <div class="span12" id="form-steps">
+                       <div class="box">
+                           <h1>Untitled Draft Project</h1>
+                           <ul>
+                               <li class="s1"><a href="start.html"><span>1</span>Start</a></li>
+                               <li class="s2 active"><a href="design.html"><span>2</span>Design</a></li>
+                               <li class="s3"><a href="ignite.html"><span>3</span>Ignite</a></li>
+                               <li class="s4"><a href="get_sponsored.html"><span>4</span>Get Sponsored</a></li>
+                               <li class="s5"><a href="get-funded.html"><span>5</span>Get Funded</a></li>
+	                    </ul>
+	                    <h3>Set up Your Campaign</h3>
+	                    <p>Congratulations! You’re now ready for the next step: letting people know why they should fund your campaign.</p>
+                        <p>Right Now, no one else can see your campaign. You can edit anything you want. When you are satisfied and ready to get funded, click the "Go Live" button on the last page to make your campaign visible.</p>
+                    </div>
+                </div>
+
+                <div class="span12 box-container" id="form-basics">
+                    <h2>Campaign Basics</h2>
+                    <p>(*Information required before you "Go Live")</p>
+                       <p>Add all the basic facts about your campaign here. Remember that your campaign tittl and short discription on how  your campaign area and your campaign profile page.</p>
+                    <div class="box">
+                           <fieldset>
+                               <label>Small Image <span>*</span></label>
+                               <img src="assets/img/small-image.png" alt="">
+                           </fieldset>
+                           <fieldset>
+                               <label for="category">Category <span>*</span></label>
+                               <select name="category" id="category" class="size-large">
+                                   <option value="1">Trimedia</option>
+                                   <option value="2">Trimedia 1</option>
+                                   <option value="3">Trimedia 2</option>
+                                   <option value="4">Trimedia 3</option>
+                                   <option value="5">Trimedia 4</option>
+                               </select>
+                           </fieldset>
+                           <fieldset>
+                               <label for="title">Title <span>*</span></label>
+                               <input type="text" name="title" id="title" class="size-large">
+                           </fieldset>
+                           <fieldset>
+                               <label for="description">Short Description <span>*</span></label>
+                               <textarea name="description" id="description" class="size-large"></textarea>
+                           </fieldset>
+                           <fieldset>
+                               <label for="link">Campaign Link <span>*</span></label>
+                               <input type="text" name="link" id="link" class="size-large popinfo" data-content="<p>The link to your Fueno Campaign profile page. Short links are better for sharing. We’ll let you know if the name is already taken.</p><p>Please include only letters and numbers, and use dashes/ hyphens instead of spaces.
+</p>">
+                           </fieldset>
+                           <fieldset>
+                               <label for="country">Country <span>*</span></label>
+                               <select name="country" id="country" class="size-large">
+                                   <option value="1">United States</option>
+                                   <option value="2">Canada</option>
+                               </select>
+                           </fieldset>
+                           <fieldset>
+                               <label for="city">City <span>*</span></label>
+                               <select name="city" id="city" class="size-large">
+                                   <option value="1">New-York</option>
+                                   <option value="2">Miami</option>
+                               </select>
+                           </fieldset>
+                    </div>
+                       <a href="#" class="btn-red">Save</a>
+                </div>
+
+                   <div class="clearfix"></div>
+
+                <div class="span12 box-container" id="form-goal-2">
+                    <h2>Funding Goal</h2>
+                    <p>Tell us how much you plan to raise and where you need it</p>
+                    <div class="box">
+                           <fieldset>
+                               <label class="usd-sign" for="goal">Goal <span>*</span></label>
+                               <input type="text" name="goal" id="goal" class="size-small popinfo" data-content="<p>Pick a realistic goal. Think about how much you need for your project and divide that by $100. Can you reasonably attract  that many contributors? Contributions tend to increase the closer you get to your goal, so realistic and lower is better. Remember that successful campaigns often raise more than their target.</p>">
+                           </fieldset>
+
+                           <div class="clearfix"></div>
+
+                           <fieldset>
+                           	<label>Deadline <span>*</span></label>
+                               <div class="pull-left">
+								<fieldset class="custom-radio">
+									<input type="radio" name="deadline" id="lenght">
+									<label for="lenght">A Spicific lenght:</label>
+								</fieldset>
+                                <input type="text" name="days-lenght" id="days-lenght" class="size-small">
+                                <em>days from launch</em>
+                                <div class="clearfix"></div>
+
+								<fieldset class="custom-radio">
+									<input type="radio" name="deadline" id="date-by">
+									<label for="date-by">I need my fund by:</label>
+								</fieldset>
+                                <input type="text" name="date" id="date" class="size-small datepicker">
+								<img alt="" class="calendar-sign" src="assets/img/calendar.png">
+								<div class="clearfix"></div>
+
+								<fieldset class="custom-radio">
+									<input type="radio" name="deadline" id="specific">
+									<label for="specific">Specific date:</label>
+								</fieldset>
+                                <input type="text" name="date-specific" id="date-specific" class="size-small datepicker popinfo" data-content="<p>The deadline is the date that your campaign ends, not the date when you will receive your funds. It can take up to 10 business days after deadline to receive your funds for up to 120 days, but the average fully funded campaign is only 47 days ling.</p>">
+                                <img alt="" class="calendar-sign" src="assets/img/calendar.png">
+                               </div>
+                           </fieldset>
+                    </div>
+                       <a href="#" class="btn-red">Save</a>
+                </div>
+
+                   <div class="clearfix"></div>
+
+                <div class="span12 box-container" id="form-story">
+                    <h2>Your Story:</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="box">
+                           <fieldset>
+                           	<label>Patch Media <span>*</span></label>
+                               <div class="pull-left">
+								<fieldset class="custom-radio">
+									<input type="radio" name="media" id="video">
+									<label for="video" class="popinfo" data-trigger="hover" data-content="<p>Campaigns with videos raise 114% more than campaigns with images.</p>">Video <em>(recommended)</em></label>
+								</fieldset>
+                                   <div class="clearfix"></div>
+								<fieldset class="custom-radio">
+									<input type="radio" name="media" id="picture">
+									<label for="picture">Image</label>
+								</fieldset>
+                               </div>
+                           </fieldset>
+                           <fieldset>
+                               <label for="video-link">Video Link <span>*</span></label>
+                               <input type="text" name="video-link" id="video-link" class="size-large">
+                           </fieldset>
+                           <fieldset>
+                               <label for="rich-text">Patch Text <span>*</span></label>
+                               <div class="pull-left editor">
+                                <textarea name="rich-text" id="rich-text"></textarea>
+                               </div>
+                           </fieldset>
+                    </div>
+                </div>
+
+                   <div class="span12 bottom-line-buttons">
+                       <a href="ignite.html" class="btn-fancy"><span>3</span>Ingnite Campaign</a>
+                       <a href="#" class="btn-gold">Save Campaign</a>
+                       <a href="#" class="btn-gray">View Campaign</a>
+                   </div>
+
+               </form>
+
+           </div>
+   	</div>
+   </section><!-- #page -->
+

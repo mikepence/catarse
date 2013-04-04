@@ -1,4 +1,4 @@
-class Sponsors::Sponsorships::StartsController < ApplicationController
+class Sponsors::Sponsorships::CouponsController < ApplicationController
 
   def show
 

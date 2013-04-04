@@ -15,9 +15,22 @@ Catarse::Application.routes.draw do
   match '/donors/:donor_id/contributions/:contribution_id/payment' => "Donors::Contributions::Payments#show"
   match '/donors/:donor_id/contributions/:contribution_id/share' => "Donors::Contributions::Shares#show"
 
-  match '/sponsors/:sponsor_id/sponsorships/:sponsorship_id/level' => "Sponsor::Sponshorships::Starts#show"
-  match '/sponsors/:sponsor_id/sponsorships/:sponsorship_id/payment' => "Sponsor::Sponshorships::Coupons#show"
-  match '/sponsors/:sponsor_id/sponsorships/:sponsorship_id/share' => "Sponsor::Sponshorships::Shares#show"
+  match '/sponsors/:sponsor_id/sponsorships/:sponsorship_id/start' => "Sponsors::Sponsorships::Starts#show"
+  match '/sponsors/:sponsor_id/sponsorships/:sponsorship_id/coupon' => "Sponsors::Sponsorships::Coupons#show"
+  match '/sponsors/:sponsor_id/sponsorships/:sponsorship_id/share' => "Sponsors::Sponsorships::Shares#show"
+
+  match '/sponsors/:sponsor_id/matchings/:matching_id/start' => "Sponsors::Matchings::Starts#show"
+  match '/sponsors/:sponsor_id/matchings/:matching_id/choose' => "Sponsors::Matchings::Choices#show"
+  match '/sponsors/:sponsor_id/matchings/:matching_id/pay' => "Sponsors::Matchings::Payments#show"
+  match '/sponsors/:sponsor_id/matchings/:matching_id/share' => "Sponsors::Matchings::Shares#show"
+
+  match '/campaigners/:campaigner_id/campaigns/:campaign_id/start' => "Campaigners::Campaigns::Starts#show"
+  match '/campaigners/:campaigner_id/campaigns/:campaign_id/design' => "Campaigners::Campaigns::Designs#show"
+  match '/campaigners/:campaigner_id/campaigns/:campaign_id/ignite' => "Campaigners::Campaigns::Ignites#show"
+  match '/campaigners/:campaigner_id/campaigns/:campaign_id/sponsor' => "Campaigners::Campaigns::Sponsors#show"
+  match '/campaigners/:campaigner_id/campaigns/:campaign_id/fund' => "Campaigners::Campaigns::Funds#show"
+
+  match '/campaigners/:campaigner_id/campaigns/:campaign_id/share' => "Campaigners::Campaigns::Shares#show"
   
   resources :student_cofunders
   resources :sponsors
