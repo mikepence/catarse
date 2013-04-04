@@ -1,0 +1,139 @@
+<% content_for :body_id, "campaign-setup" %>
+
+<div class="container"><h2 class="sub-title">CAMPAIGN ID: <span>08770778786</span></h2></div>
+
+<!-- Page Profile -->
+<section id="page-profile">
+    <div class="container">
+        <div class="row">
+            <div class="span8" id="summary">
+                <dl>
+                    <dt><%= image_tag "pictures/kid.jpg" %></dt>
+                    <dd>
+                        <h4>Your contribution summary</h4>
+                        <div class="col">
+                            <div>
+                                <strong>Help Alphonse Get His Suregery</strong>
+                                <p>Alphonse De Leon was borh with Tetralogy of Fallot. Help him get an open heart surgery in &hellip;</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li><strong>Your Comtribution:</strong> $50</li>
+                                <li><strong>Your Perk:</strong> level 1 coupon book</li>
+                                <li><strong>Payment Method:</strong></li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="span3 offset1">
+                <ul class="account-details">
+                    <li><strong>Student Co-Founder:</strong></li>
+                    <li class="list-heading">
+                        <%= image_tag "pictures/college.jpg" %>
+                        <%= image_tag "pictures/a-small.jpg" %>
+                        <strong>Warren Etheredge</strong><br>
+                        <em>Ramapo College</em>
+                    </li>
+                    <li><strong>Location:</strong> Seattle, Washington, United States</li>
+                    <li><strong>Major:</strong> Computer Science</li>
+                    <li><strong>Recommended:</strong> Warren Buffet</li>
+                    <li><a href="#">See More &raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section><!-- #page-profile -->
+
+<div id="form-steps" class="standalone">
+    <div class="container">
+        <ul>
+            <li class="c1"><a href="donate_coupon_contribute(start).html"><span>1</span>Contribute</a></li>
+            <li class="c2 active"><a href="donate_coupon_pay.html"><span>3</span>Pay</a></li>
+            <li class="c3"><a href="coupon_share.html"><span>4</span>Share</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Page -->
+<section id="page">
+	<div class="container">
+
+        <h2 class="sub-title">How would you like to pay?</h2>
+     	
+        <div class="box-container profile-edit matching-summary">
+            <div class="box">
+                <h3 class="section-title">Pay with PayPal</h3>
+                <a href="#"><%= image_tag "donate.gif", :class => "pull-right" %></a>
+                <p>After clicking this button, you'll be redirected to PayPal's site where you can pay with your PayPal account or credit card</p>
+            </div>
+        </div>
+
+        <div class="box-container profile-edit matching-summary card-data">
+            <div class="box">
+                <h3 class="section-title">Pay with a Credit Card</h3>
+                <div>
+                    <div class="box-half">
+                        <fieldset>
+                            <label for="title">First Name</label>
+                            <input type="text" name="title" id="title" class="size-large">
+                        </fieldset>
+                        <fieldset>
+                            <label for="title">Card Number</label>
+                            <input type="text" name="title" id="title" class="size-large">
+                        </fieldset>
+                        <fieldset>
+                            <label for="title">Expiration Date</label>
+                            <select name="exp-m" id="exp-m" class="month">
+                                <option value="1">MM</option>
+                            </select>
+                            <select name="exp-m" id="exp-m" class="year">
+                                <option value="1">YYYY</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <label for="title">Country</label>
+                            <select name="country" id="country" class="size-large">
+                                <option value="1">USA</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div class="box-half">
+                        <fieldset>
+                            <label for="title">Last Name</label>
+                            <input type="text" name="title" id="title" class="size-large">
+                        </fieldset>
+                        <fieldset>
+                            <label for="title">Security Code</label>
+                            <input type="text" name="title" id="title" class="size-small">
+                        </fieldset>
+                    </div>
+                </div>
+                <fieldset>
+                    <label for="title">Street Address</label>
+                    <input type="text" name="title" id="title" class="size-very-large">
+                </fieldset>
+                <div>
+                    <div class="box-half">
+                        <fieldset>
+                            <label for="title">City</label>
+                            <input type="text" name="title" id="title" class="size-large">
+                        </fieldset>
+                    </div>
+                    <div class="box-half">
+                        <fieldset>
+                            <label for="title">Postal Code</label>
+                            <input type="text" name="title" id="title" class="size-large">
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-line-buttons">
+            <a href="#" class="btn-large pull-right">Continue</a>
+        </div>
+        
+	</div>
+</section><!-- #page -->

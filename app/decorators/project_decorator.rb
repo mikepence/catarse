@@ -22,13 +22,18 @@ class ProjectDecorator < Draper::Decorator
   end
 
   def display_image
-    if source.uploaded_image.present?
-      source.uploaded_image.project_thumb.url
-    elsif source.image_url.present?
-      source.image_url
-    else
-      source.video_thumbnail.url || source.vimeo.thumbnail
-    end
+    image_tag "/assets/pictures/item.jpg"
+    #if source.uploaded_image.present?
+    #  source.uploaded_image.project_thumb.url
+    #elsif source.image_url.present?
+    #  source.image_url
+    #else
+    #  source.video_thumbnail.url || source.vimeo.thumbnail
+    #end
+  end
+
+  def large_display_image
+    image_tag "/assets/pictures/main-banner.jpg"
   end
 
   def display_expires_at

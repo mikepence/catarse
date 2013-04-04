@@ -2,19 +2,28 @@ require 'sidekiq/web'
 
 Catarse::Application.routes.draw do
 
+
+  #resources :donors do
+  #  resources :contributions do
+  #    resources :levels, :controller => Donors::Contributions::LevelsController
+  #    resources :payments
+  #    resources :shares
+  #  end
+  #end
+
+  match '/donors/:donor_id/contributions/:contribution_id/level' => "Donors::Contributions::Levels#show"
+  match '/donors/:donor_id/contributions/:contribution_id/payment' => "Donors::Contributions::Payments#show"
+  match '/donors/:donor_id/contributions/:contribution_id/share' => "Donors::Contributions::Shares#show"
+
+  match '/sponsors/:sponsor_id/sponsorships/:sponsorship_id/level' => "Sponsor::Sponshorships::Starts#show"
+  match '/sponsors/:sponsor_id/sponsorships/:sponsorship_id/payment' => "Sponsor::Sponshorships::Coupons#show"
+  match '/sponsors/:sponsor_id/sponsorships/:sponsorship_id/share' => "Sponsor::Sponshorships::Shares#show"
+  
   resources :student_cofunders
-
-
   resources :sponsors
-
-
   resources :profiles
 
-
-  resources :donors
-
-
-  devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
+  devise_for :users, :controllers => {:omniauth_callbacks => "omniauth_callbacks"}
 
   check_user_admin = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.admin }
   constraints check_user_admin do
@@ -23,7 +32,7 @@ Catarse::Application.routes.draw do
 
   # Non production routes
   if Rails.env == "development"
-    resources :emails, :only => [ :index ]
+    resources :emails, :only => [:index]
   end
 
   mount CatarsePaypalExpress::Engine => "/", :as => "catarse_paypal_express"
@@ -61,9 +70,9 @@ Catarse::Application.routes.draw do
   resources :cause_owners
 
   resources :projects do
-    resources :updates, only: [ :index, :create, :destroy ]
-    resources :rewards, only: [ :index, :create, :update, :destroy ]
-    resources :backers, controller: 'projects/backers', only: [ :index, :show, :new, :create ] do
+    resources :updates, only: [:index, :create, :destroy]
+    resources :rewards, only: [:index, :create, :update, :destroy]
+    resources :backers, controller: 'projects/backers', only: [:index, :show, :new, :create] do
       member do
         match 'credits_checkout'
         post 'update_info'
@@ -99,7 +108,7 @@ Catarse::Application.routes.draw do
   end
 
   namespace :adm do
-    resources :projects, only: [ :index, :update ] do
+    resources :projects, only: [:index, :update] do
       member do
         put 'approve'
         put 'reject'
@@ -107,19 +116,19 @@ Catarse::Application.routes.draw do
       end
     end
 
-    resources :financials, only: [ :index ]
+    resources :financials, only: [:index]
 
-    resources :backers, only: [ :index, :update ] do
+    resources :backers, only: [:index, :update] do
       member do
         put 'confirm'
         put 'unconfirm'
         put 'change_reward'
       end
     end
-    resources :users, only: [ :index ]
+    resources :users, only: [:index]
 
     namespace :reports do
-      resources :backer_reports, only: [ :index ]
+      resources :backer_reports, only: [:index]
     end
   end
 

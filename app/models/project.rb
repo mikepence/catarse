@@ -18,7 +18,7 @@ class Project < ActiveRecord::Base
 
   mount_uploader :uploaded_image, LogoUploader
 
-  delegate :display_status, :display_progress, :display_image, :display_expires_at,
+  delegate :display_status, :display_progress, :display_image, :large_display_image, :display_expires_at,
     :display_pledged, :display_goal, :remaining_days,
     :to => :decorator
 
@@ -207,6 +207,7 @@ class Project < ActiveRecord::Base
       user: user,
       category: category,
       image: display_image,
+      large_image: large_display_image,
       headline: headline,
       progress: progress,
       display_progress: display_progress,
