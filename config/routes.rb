@@ -2,14 +2,13 @@ require 'sidekiq/web'
 
 Catarse::Application.routes.draw do
 
-
-  #resources :donors do
+  resources :donors do
   #  resources :contributions do
   #    resources :levels, :controller => Donors::Contributions::LevelsController
   #    resources :payments
   #    resources :shares
   #  end
-  #end
+  end
 
   match '/donors/:donor_id/contributions/:contribution_id/level' => "Donors::Contributions::Levels#show"
   match '/donors/:donor_id/contributions/:contribution_id/payment' => "Donors::Contributions::Payments#show"
@@ -35,6 +34,8 @@ Catarse::Application.routes.draw do
   resources :student_cofunders
   resources :sponsors
   resources :profiles
+
+  resources :campaign_searches
 
   devise_for :users, :controllers => {:omniauth_callbacks => "omniauth_callbacks"}
 

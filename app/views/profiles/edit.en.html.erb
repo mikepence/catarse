@@ -1,0 +1,233 @@
+<% content_for :body_id, "campaign-setup" %>
+
+<!-- Profiles Menu -->
+<section id="profile-nav">
+  <div id="profile-tabs">
+    <div class="container">
+      <ul>
+        <li class="active"><a href="/en/profiles/1">Profile</a></li>
+        <li><a href="/en/donors">Donor</a></li>
+        <li><a href="/cause_owners/1">Cause Owner</a></li>
+        <li><a href="/student_cofunders/1">Student Co-Founder</a></li>
+        <li><a href="/sponsors/1">Sponsor</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="profile-info">
+    <div class="container">
+      <img src="/assets/pictures/profile-photo.jpg" alt="">
+      <dl>
+        <dt>William Hauver</dt>
+        <dd>
+          <div class="vote">
+            <strong>Validation Rating:</strong>
+
+            <div class="stars"></div>
+          </div>
+        </dd>
+      </dl>
+      <a href="/en/profiles/1" class="btn-gray">View Profile</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Page -->
+<section id="page">
+  <div class="container">
+    <div class="row">
+
+      <div class="span6">
+
+        <div class="box-container profile-edit">
+          <h2>Basic Info</h2>
+
+          <div class="box">
+            <fieldset>
+              <label for="name">First Name</label>
+              <input type="text" class="size-large" name="useritem[useritem][facebook]" origname="facebook">
+            </fieldset>
+            <fieldset>
+              <label for="name">Last Name</label>
+              <input type="text" class="size-large" name="useritem[useritem][twitter]" origname="twitter">
+            </fieldset>
+            <fieldset>
+              <label for="name">Country</label>
+              <input type="text" class="size-large" name="useritem[useritem][youtube]" origname="youtube">
+            </fieldset>
+            <fieldset>
+              <label for="name">City</label>
+              <input type="text" class="size-large" name="useritem[useritem][imds]" origname="imds">
+            </fieldset>
+            <fieldset>
+              <label for="name">Zip Code</label>
+              <input type="text" class="size-large" name="useritem[useritem][website]" origname="website">
+            </fieldset>
+            <fieldset>
+              <label for="name">Gender</label>
+              <select name="gender" id="gender" class="size-large">
+                <option value="0">select</option>
+                <option value="1">male</option>
+                <option value="2">female</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <label for="name">Year of Birth</label>
+              <select name="gender" id="gender" class="size-large">
+                <option value="0">2000</option>
+                <option value="1">1990</option>
+                <option value="2">1980</option>
+              </select>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="box-container profile-edit">
+          <h2>Your Story</h2>
+
+          <div class="box">
+            <fieldset>
+              <label for="name">Profile Links</label>
+              <input type="text" class="size-large" name="useritem[useritem][facebook]" origname="facebook">
+            </fieldset>
+            <fieldset>
+              <label for="name">Tagline</label>
+              <input type="text" class="size-large" name="useritem[useritem][twitter]" origname="twitter">
+            </fieldset>
+            <fieldset>
+              <label for="about-me">About Me</label>
+              <textarea name="about-me" id="about-me" cols="30" rows="10" class="size-large"></textarea>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="box-container profile-edit">
+          <h2>E-mail and Password</h2>
+
+          <div class="box">
+            <h3 class="section-title">Update Your Email Address</h3>
+            <fieldset>
+              <label for="name">Email Address</label>
+              <input type="text" class="size-medium" name="useritem[useritem][facebook]" origname="facebook">
+            </fieldset>
+            <fieldset>
+              <input type="submit" class="btn-middle pull-right" value="Save">
+              <label for="name">Confirm Email</label>
+              <input type="text" class="size-medium" name="useritem[useritem][twitter]" origname="twitter">
+            </fieldset>
+          </div>
+
+          <div class="box">
+            <h3 class="section-title">Update Your Password</h3>
+            <fieldset>
+              <label for="name">Current Password</label>
+              <input type="text" class="size-medium" name="useritem[useritem][facebook]" origname="facebook">
+            </fieldset>
+            <fieldset>
+              <label for="name">New Password</label>
+              <input type="text" class="size-medium" name="useritem[useritem][twitter]" origname="twitter">
+            </fieldset>
+            <fieldset>
+              <input type="submit" class="btn-middle pull-right" value="Save">
+              <label for="name">Confirm Password</label>
+              <input type="text" class="size-medium" name="useritem[useritem][twitter]" origname="twitter">
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="box-container profile-edit">
+          <h2>Delete Your Account</h2>
+
+          <div class="box">
+            <p>This is <strong>permanent and irriversible</strong>. You will lose ALL account information!</p>
+            <input type="submit" class="btn-middle pull-right" value="Delete My Account Anyway">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="span6 box-container profile-edit">
+        <div class="box-container profile-edit">
+          <h2>Your Photos</h2>
+
+          <div class="box">
+            <fieldset class="image">
+              <label for="name">Avatar</label>
+
+              <div>
+                <img src="/assets/pictures/avatar-4.jpg" alt="">
+
+                <div class="file_button_container"><input type="file"></div>
+              </div>
+            </fieldset>
+            <fieldset class="image">
+              <label for="name">Profile Image</label>
+
+              <div>
+                <img src="/assets/pictures/profile-image.jpg" alt="">
+
+                <div class="file_button_container"><input type="file"></div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="box-container profile-edit">
+          <h2>Outside Links</h2>
+
+          <div class="box">
+            <fieldset>
+              <label for="name">Facebook</label>
+              <input type="text" class="size-large" name="useritem[useritem][facebook]" origname="facebook">
+            </fieldset>
+            <fieldset>
+              <label for="name">Twitter</label>
+              <input type="text" class="size-large" name="useritem[useritem][twitter]" origname="twitter">
+            </fieldset>
+            <fieldset>
+              <label for="name">YouTube</label>
+              <input type="text" class="size-large" name="useritem[useritem][youtube]" origname="youtube">
+            </fieldset>
+            <fieldset>
+              <label for="name">IMDs</label>
+              <input type="text" class="size-large" name="useritem[useritem][imds]" origname="imds">
+            </fieldset>
+            <fieldset>
+              <label for="name">Website</label>
+              <input type="text" class="size-large" name="useritem[useritem][website]" origname="website">
+            </fieldset>
+            <fieldset>
+              <label for="name">&nbsp;</label>
+              <input type="submit" class="btn-middle" value="Add Custom Link">
+            </fieldset>
+          </div>
+        </div>
+        <div class="box-container profile-edit">
+          <h2>Your Email From Indiegogo</h2>
+
+          <div class="box">
+            <h3 class="section-title">Campaign Updates</h3>
+
+            <p>You can stop receiving email from specific campaign by choosing "Unfollow" in the actions menu in the
+              "Campaign I've Funded" and "Campaigns I Followign" sections of your <a href="#">My Campaigns</a> tab.</p>
+          </div>
+          <div class="box">
+            <h3 class="section-title">Indiegogo News</h3>
+            <input type="submit" class="btn-middle pull-right" value="Unsubscribe">
+
+            <p>You are currently sighed up for Indiegogo News.</p>
+          </div>
+          <div class="box">
+            <h3 class="section-title">All Recurring Emails from Indiegogo</h3>
+
+            <p>You can stop receiving email from specific campaign by choosing "Unfollow" in the actions menu in the
+              "Campaign I've Funded" and "Campaigns I Followign" sections of your My Campaigns tab.</p>
+            <input type="submit" class="btn-middle pull-right" value="Unsubscribe From All Recurring Emails">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section><!-- #page -->
+
