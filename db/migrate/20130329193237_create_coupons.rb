@@ -5,6 +5,6 @@ class CreateCoupons < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :coupons, :sponsorship_id
+    #add_index :coupons, :sponsorship_id
   end
 end
