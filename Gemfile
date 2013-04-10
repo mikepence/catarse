@@ -141,3 +141,5 @@ gem 'rails_autolink', '~> 1.0.7'
 gem "RedCloth"
 
 gem 'spork'
+
+gem 'newrelic_rpm', :group => :production
