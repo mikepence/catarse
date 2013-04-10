@@ -5,6 +5,6 @@ class CreateSponsorships < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :sponsorships, :sponsor_id
+    #add_index :sponsorships, :sponsor_id
   end
 end
