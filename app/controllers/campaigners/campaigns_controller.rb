@@ -1,4 +1,4 @@
-class Campaigner::CampaignsController < ApplicationController
+class Campaigners::CampaignsController < ApplicationController
 
   def create
     # gets in campaigner_id
