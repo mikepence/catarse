@@ -18,7 +18,7 @@ class ProjectsController < ApplicationController
         @marquee_project = Project.first
         @featured_project = Project.first
         @expiring_projects = Project.expiring_for_home([])
-        @local_projects = Project.random()
+        @local_projects = Project.first # Project.random()
       end
 
       format.json do
