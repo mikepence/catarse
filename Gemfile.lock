@@ -90,6 +90,9 @@ GEM
       builder
       json
     arel (3.0.2)
+    asset_sync (0.5.4)
+      activemodel
+      fog
     auto_html (1.4.2)
       RedCloth
       redcarpet
@@ -443,6 +446,7 @@ DEPENDENCIES
   RedCloth
   activemerchant (= 1.17.0)
   airbrake
+  asset_sync
   auto_html (= 1.4.2)
   best_in_place
   cancan!
