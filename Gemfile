@@ -3,9 +3,12 @@ source 'https://rubygems.org'
 # For heroku
 ruby '1.9.3'
 
-gem 'rails',    '3.2.12'
-gem 'sidekiq',  '~> 2.7.5'
+gem 'rails', '3.2.12'
+gem 'sidekiq', '~> 2.7.5'
 gem 'sinatra', require: false # required by sidekiq web interface mounted on /sidekiq
+
+gem "simple_form"
+gem 'country-select'
 
 # Turns every field on a editable one
 gem 'best_in_place'
@@ -24,10 +27,10 @@ gem 'schema_plus'
 gem 'schema_associations'
 
 # Payment engine using Paypal
-gem 'catarse_paypal_express', git: 'git://github.com/catarse/catarse_paypal_express.git',  ref: 'bce4d8c'
+gem 'catarse_paypal_express', git: 'git://github.com/catarse/catarse_paypal_express.git', ref: 'bce4d8c'
 
 # Payment engine using Moip
-gem 'catarse_moip',           git: 'git://github.com/catarse/catarse_moip.git', ref: '9ba2b2b'
+gem 'catarse_moip', git: 'git://github.com/catarse/catarse_moip.git', ref: '9ba2b2b'
 
 # TODO: Check the Catarse_Moip dependency
 gem 'moip', git: 'git://github.com/moiplabs/moip-ruby.git'
@@ -61,8 +64,8 @@ gem "airbrake"
 gem 'catarse_mailchimp', git: 'git://github.com/catarse/catarse_mailchimp'
 
 # HTML manipulation and formatting
-gem 'formtastic',   '~> 2.1.1'
-gem "auto_html",    '= 1.4.2'
+gem 'formtastic', '~> 2.1.1'
+gem "auto_html", '= 1.4.2'
 gem 'kaminari'
 
 # Uploads
@@ -72,11 +75,11 @@ gem 'fog'
 
 # Other Tools
 gem 'feedzirra'
-gem 'validation_reflection',      git: 'git://github.com/ncri/validation_reflection.git'
-gem 'inherited_resources',        '1.3.1'
+gem 'validation_reflection', git: 'git://github.com/ncri/validation_reflection.git'
+gem 'inherited_resources', '1.3.1'
 gem 'has_scope'
-gem 'spectator-validates_email',  require: 'validates_email'
-gem 'has_vimeo_video',            '~> 0.0.5'
+gem 'spectator-validates_email', require: 'validates_email'
+gem 'has_vimeo_video', '~> 0.0.5'
 gem 'enumerate_it'
 gem 'httparty', '~> 0.6.1' # this version is required by moip gem, otherwise payment confirmation will break
 
@@ -86,7 +89,7 @@ gem 'routing-filter'
 
 # Payment
 gem 'activemerchant', '1.17.0', require: 'active_merchant'
-gem 'httpclient',     '2.2.5'
+gem 'httpclient', '2.2.5'
 
 # Server
 gem 'thin'
@@ -110,23 +113,23 @@ group :test, :development do
 end
 
 group :test do
+  gem 'cucumber-rails', :require => false
   gem 'launchy'
   gem 'database_cleaner'
-  gem 'mocha',      '~> 0.10.4'
+  gem 'mocha', '~> 0.10.4'
   gem 'shoulda'
   gem 'factory_girl_rails'
-  gem 'capybara',   '~> 2.0.2'
+  gem 'capybara', '~> 2.0.2'
 end
 
 
 group :assets do
-  gem 'sass-rails',         '~> 3.2.5'
-  gem 'coffee-rails',       '~> 3.2.2'
-  gem "compass-rails",      '~> 1.0.2'
-  gem 'uglifier',           '~> 1.0.3'
+  gem 'sass-rails', '~> 3.2.5'
+  gem 'coffee-rails', '~> 3.2.2'
+  gem "compass-rails", '~> 1.0.2'
+  gem 'uglifier', '~> 1.0.3'
   gem 'compass-960-plugin', '~> 0.10.4'
 end
-
 
 
 # FIXME: Not-anymore-on-development

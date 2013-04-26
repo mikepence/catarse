@@ -1,0 +1,116 @@
+<%= javascript_include_tag 'http://cdn.embed.ly/jquery.embedly-3.0.5.min.js' %>
+
+<% content_for :body_id, "campaign-setup" %>
+
+<!-- Page -->
+<section id="page">
+  <div class="container">
+    <div class="row">
+      <form action="#">
+        <div class="span12"><h2 id="campaign-id">Campaign ID: <span>08770778786</span></h2></div>
+        <div class="span12" id="form-steps">
+          <div class="box">
+            <h1>Untitled Draft Project</h1>
+            <ul>
+              <li class="s1 active"><a href="/campaigners/1/campaigns/1/start"><span>1</span>Start</a></li>
+              <li class="s2"><a href="/campaigners/1/campaigns/1/design"><span>2</span>Design</a></li>
+              <li class="s3"><a href="/campaigners/1/campaigns/1/ignite"><span>3</span>Ignite</a></li>
+              <li class="s4"><a href="/campaigners/1/campaigns/1/sponsor"><span>4</span>Get Sponsored</a></li>
+              <li class="s5"><a href="/campaigners/1/campaigns/1/fund"><span>5</span>Get Funded</a></li>
+            </ul>
+            <h3>Start Raising Funds on Fuego</h3>
+
+            <p>Start your campaign and join tens of thousands of people raising funds on Fuego. People just like
+              you.</p>
+          </div>
+        </div>
+      </form>
+      <!-- Box -->
+      <%= simple_form_for(@campaign_worksheet, :html => {:class => 'form-horizontal'}) do |f| %>
+
+          <div class="box-container profile-edit span12" id="cause-owner">
+            <h2>Campaign Basics</h2>
+
+            <div class="box">
+
+              <%= f.input :title,
+                          :placeholder => 'Provide a short, descriptive title',
+                          :input_html => {:class => "span8"} %>
+              <%= f.input :short_description,
+                          :placeholder => 'Summarize your pitch in a compelling way!',
+                          :input_html => {:class => "span8", :rows => 3} %>
+              <%= f.input :campaign_link,
+                          :placeholder => 'Your permalink (single word, no spaces).',
+                          :hint => 'your camapaign will appear at fueno.com/your_permalink',
+                          :input_html => {:class => 'span4'} %>
+              <%= f.input :cause_id,
+                          :include_blank => false,
+                          :collection => Cause.order(:name),
+                          :hint => 'Select the cause your campaign will benefit',
+                          :input_html => {:class => 'span4'} %>
+              <%= f.input :category_id,
+                          :include_blank => false,
+                          :collection => Category.order(:name_en),
+                          :hint => 'Which Category best describes your campaign?',
+                          :input_html => {:class => 'span4'} %>
+              <%= f.input :country,
+                          :priority => ["United States", "Canada", "Mexico"],
+                          :input_html => {:class => 'span4'} %>
+              <%= f.input :city,
+                          :placeholder => 'Your city',
+                          :priority => ["United States", "Canada", "Mexico"],
+                          :hint => 'Add state or province, if you are from Philadelphia, MS or similar.',
+                          :input_html => {:class => 'span4'} %>
+            </div>
+          </div>
+
+
+          <div class="box-container profile-edit span12" id="cause-owner">
+            <h2>Funding Goals</h2>
+            <div class="box">
+              <%= f.input :goal,
+                          :placeholder => 'Amount to raise',
+                          :hint => 'Numbers only, omit the $',
+                          :input_html => {:class => "span2"} %>
+              <%= f.input :days,
+                          :placeholder => '# of days',
+                          :hint => 'How many days should your campaign be live? Max is 60.',
+                          :input_html => {:class => "span2"} %>
+
+            </div>
+
+          </div>
+
+          <div class="box-container profile-edit span12" id="cause-owner">
+            <h2>Your Story</h2>
+            <div class="box">
+              <%= f.input :primary_media,
+                          :placeholder => 'The URL for your pitch image or video',
+                          :hint => "We support embedding from over <a href='http://embed.ly/embed/features/providers' target='_blank'>250+ sources</a>.".html_safe,
+                          :input_html => {:class => "span6"} %>
+              <%= f.input :pitch,
+                          :placeholder => 'Your pitch!',
+                          :input_html => {:class => "span8", :rows => 8} %>
+
+            </div>
+
+            <div class="form-actions">
+              <%= f.button :submit, 'Save', :class => 'btn btn-primary' %>
+            </div>
+
+          </div>
+
+          <!--<div class="box-container profile-edit span12" id="cause-owner">-->
+            <!--<div class="box">-->
+              <!--<div class="span12 bottom-line-buttons">-->
+                <!--<a href="/campaigners/1/campaigns/1/design" class="btn-fancy"><span>1</span>Design Campaign</a>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+
+      <% end %>
+
+    </div>
+  </div>
+</section><!-- #page -->

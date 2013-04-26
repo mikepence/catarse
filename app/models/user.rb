@@ -66,6 +66,7 @@ class User < ActiveRecord::Base
   has_many :oauth_providers, through: :authorizations
   has_many :backs, class_name: "Backer"
   has_one :user_total
+  has_many :campaign_worksheets # TODO for cofunder only
 
   accepts_nested_attributes_for :unsubscribes, allow_destroy: true rescue puts "No association found for name 'unsubscribes'. Has it been defined yet?"
   scope :backers, :conditions => ["id IN (SELECT DISTINCT user_id FROM backers WHERE confirmed)"]

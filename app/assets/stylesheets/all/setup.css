@@ -567,7 +567,6 @@ input.customfile-button {
 
     #cause-owner fieldset { padding-top: 5px; }
     #cause-owner fieldset input[type="text"] { margin-right: 15px; }
-    #cause-owner textarea { height: 60px; }
     #cause-owner label.wide { width: auto; margin-right: 15px; }
     #cause-owner hr, hr { border-color: #9c9c9c; border-top: none; margin: 20px 0; }
     #cause-owner .btn-middle { margin-top: -12px; }

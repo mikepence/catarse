@@ -1,10 +1,19 @@
 FactoryGirl.define do
+
   sequence :name do |n|
-    "Foo bar #{n}"
+    "Thing #{n}"
   end
 
   sequence :email do |n|
     "person#{n}@example.com"
+  end
+
+  sequence :cause do |n|
+    "Cause #{n}"
+  end
+
+  sequence :category do |n|
+    "Category #{n}"
   end
 
   sequence :uid do |n|
@@ -12,7 +21,11 @@ FactoryGirl.define do
   end
 
   sequence :permalink do |n|
-    "foo_page_#{n}"
+    "permalink_#{n}"
+  end
+
+  factory :cause do |c|
+    c.name { generate(:cause) }
   end
 
   factory :user do |f|
@@ -24,7 +37,8 @@ FactoryGirl.define do
   end
 
   factory :category do |f|
-    f.name_pt { generate(:name) }
+    f.name_en {generate(:category)}
+    f.name_pt {generate(:category)}
   end
 
   factory :project do |f|

@@ -1,5 +1,6 @@
 class Category < ActiveRecord::Base
   has_many :projects
+  has_many :campaign_worksheets
   validates_presence_of :name_pt
   validates_uniqueness_of :name_pt
 

@@ -2,6 +2,8 @@ require 'sidekiq/web'
 
 Catarse::Application.routes.draw do
 
+  resources :campaign_worksheets
+
   resources :donors do
   #  resources :contributions do
   #    resources :levels, :controller => Donors::Contributions::LevelsController

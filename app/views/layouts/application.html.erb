@@ -22,11 +22,13 @@
 <body id="<%= yield :body_id %>">
 <header id="header">
   <div class="container">
-    <a href="homepage.html" id="logo"><%= image_tag('logo.png', :alt => 'Fueno') %></a>
+    <a href="/" id="logo"><%= image_tag('logo.png', :alt => 'Fueno') %></a>
     <nav id="main-navigation">
       <ul>
         <li><a href="mission.html">What is <br>FUENO?</a></li>
-        <li><a href="/campaigners/1/campaigns/1/start">Start <span>new campaign</span></a></li>
+        <li>
+          <%= link_to "Start <span>new campaign</span>".html_safe, new_campaign_worksheet_path, :id => 'new-campaign' %>
+        </li>
         <li><a href="/campaign_searches/new">Sponsor <span>a great cause</span></a></li>
         <li><a href="#">Co-Fund <span>your education</span></a></li>
       </ul>
@@ -35,7 +37,7 @@
       <nav>
         <ul>
           <li class="pull-down">
-            <a href="#">Username <b class="caret"></b></a>
+            <a href="<%= new_user_session_path %>">Sign up <b class="caret"></b></a>
             <ul>
               <li><strong>My Account</strong></li>
               <li><a href="/en/profiles/1">My Profile</a></li>
