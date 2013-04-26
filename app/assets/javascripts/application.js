@@ -22,4 +22,4 @@
 //= require ./app/collections/paginated.js
 //= require_tree ./app
 //= require ./init.js
-
+//= require ckeditor-jquery

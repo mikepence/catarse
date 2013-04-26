@@ -9,6 +9,7 @@ gem 'sinatra', require: false # required by sidekiq web interface mounted on /si
 
 gem "simple_form"
 gem 'country-select'
+gem 'ckeditor_rails'
 
 # Turns every field on a editable one
 gem 'best_in_place'
