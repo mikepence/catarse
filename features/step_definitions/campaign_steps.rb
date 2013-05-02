@@ -18,3 +18,12 @@ And /^some causes and some categories/ do
   3.times {Given "a cause"}
   3.times {Given "a category"}
 end
+
+When /^I fill in the editor for "([^"]*)" with "([^"]*)"$/ do |field, value|
+  fill_in_ckeditor field, :with => value
+end
+
+When /^I fill in "([^"]*)" in the CKEditor instance "([^"]*)"$/ do |value, input_id|
+  browser = page.driver.browser
+  browser.execute_script("CKEDITOR.instances['#{input_id}'].setData('#{value}');")
+end

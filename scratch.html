@@ -1,17 +1,12 @@
-TODO:
-    top menu to restore for logged in user
-
-<li class="pull-down">
-    <a href="#">Username <b class="caret"></b></a>
-    <ul>
-        <li><strong>My Account</strong></li>
-        <li><a href="/en/profiles/1">My Profile</a></li>
-        <li><a href="/en/profiles/1/edit">Edit Settings</a></li>
-        <li><a href="/en/donors">My Donations</a></li>
-        <li><a href="/cause_owners/1">My Causes</a></li>
-        <li><a href="sponsor_page.html">My Sponsorship</a></li>
-        <li><a href="/student_cofunders/1">Student CoFunder</a></li>
-        <li class="logout-link"><a href="homepage.html">Log Out</a></li>
-    </ul>
-</li>
-<li><a href="#">Me</a></li>
+cause_id integer,
+category_id integer,
+user_id integer,
+title character varying(255),
+short_description text,
+campaign_link character varying(255),
+country character varying(255),
+city character varying(255),
+goal integer,
+days integer,
+primary_media character varying(255),
+pitch text,
