@@ -25,10 +25,10 @@
           </div>
         </div>
       </form>
-      <!-- Box -->
+      <br/>
       <%= simple_form_for(@campaign_worksheet, :html => {:class => 'form-horizontal'}) do |f| %>
 
-          <div class="box-container profile-edit span12" id="cause-owner">
+          <div class="box-container profile-edit span12" id="cause-owner" style="margin-top: 2em">
             <h2>Campaign Basics</h2>
 
             <div class="box">
@@ -90,7 +90,7 @@
                           :input_html => {:class => "span6"} %>
               <%= f.input :pitch,
                           :placeholder => 'Your pitch!',
-                          :input_html => {:class => " ckeditor span8", :rows => 8} %>
+                          :input_html => {:class => " ckeditor span8", :rows => 16} %>
 
             </div>
 
@@ -107,10 +107,7 @@
               <!--</div>-->
             <!--</div>-->
           <!--</div>-->
-
-
       <% end %>
-
     </div>
   </div>
 </section><!-- #page -->

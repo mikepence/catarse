@@ -13,6 +13,7 @@
 //= require ./lib/jquery-1.7.1.min.js
 //= require jquery_ujs
 //= require best_in_place
+//= require ckeditor-jquery
 //= require ./lib/underscore-min.js
 //= require ./lib/backbone-min.js
 //= require_tree ./lib
@@ -22,4 +23,3 @@
 //= require ./app/collections/paginated.js
 //= require_tree ./app
 //= require ./init.js
-//= require ckeditor-jquery
